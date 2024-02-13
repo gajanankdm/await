@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2/dist/sweetalert2.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+</head>
+<body>
+   <h1 class="p-4 mb-3 text-center bg-primary">crud using asyncawait</h1>
+   <div class="container">
+    <div class="row">
+      <div class="col-md-6 offset-md-3">
+        <div class="card mb-4">
+            <div class="card-body">
+              <form id="postForm">
+                <div class="form-group">
+                  <label for="title">Title</label>
+                  <input class="form-control" required id="title" type="text">
+                </div>
+                <div class="form-group">
+                  <label for="body">Content</label>
+                  <textarea class="form-control" rows="5" required id="body" type="text"></textarea>
+                </div>
+                <div class="form-group">
+                  <label for="userId">UserId</label>
+                  <select class="form-control" required id="userId" type="text">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                  </select>
+                </div>
+                <div class="text-right">
+                  <button class="btn btn-outline-success" type="submit" id="submitBtn"><strong>Add post</strong></button>  
+                  <button class="btn btn-primary d-none" type="button" id="updateBtn"><strong>Update post</strong></button>  
+                </div>
+              </form>  
+            </div>
+        </div>
+        <div class="d-flex flex-column-reverse" id="cardContainer">
+          <!-- <div class="">
+          <div class="card-header">
+            <h2></h2>
+          </div>
+          <div class="card-body">
+            <p></p>
+          </div>
+          <div class="card-footer d-flex justify-content-between">
+            <button class="btn btn-primary">Edit</button>
+            <button class="btn btn-danger">Delete</button>
+          </div>  
+          </div> -->
+        </div>
+          
+      </div>
+    </div>
+   </div> 
+
+   <script src="https://cdn.jsdelivr.net/npm/sweetalert2/dist/sweetalert2.all.min.js"></script>
+  <script src="./assets/js/app.js"></script>  
+</body>
+</html>
